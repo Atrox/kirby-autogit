@@ -1,0 +1,7 @@
+{
+    "name": "atrox/kirby-autogit",
+    "type": "kirby-plugin",
+    "require": {
+        "czproject/git-php": "^3.14"
+    }
+}
