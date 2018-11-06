@@ -32,7 +32,7 @@ class Autogit extends GitRepository
     public function save(...$params)
     {
         // add changes
-        $this->addFile(kirby()->roots()->content());
+        $this->execute(['add', '--all', kirby()->roots()->content()]);
 
         // do not try to commit when the working copy is clean
         if (!$this->hasChanges()) {
